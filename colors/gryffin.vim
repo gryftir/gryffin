@@ -13,7 +13,7 @@ else
     let g:colors_name = expand("<sfile>:t:r")
     command! -nargs=+ CSAHi exe "hi" <q-args>
 endif
-
+"let colors_name ="gryffin"
 function! s:old_kde()
   " Konsole only used its own palette up til KDE 4.2.0
   if executable('kde4-config') && system('kde4-config --kde-version') =~ '^4.[10].'
@@ -1291,3 +1291,5 @@ endif
 if 1
     delcommand CSAHi
 endif
+highlight Normal ctermbg=None
+highlight NonText ctermbg=None
