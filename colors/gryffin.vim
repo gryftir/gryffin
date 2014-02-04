@@ -103,8 +103,7 @@ elseif has("gui_running") || (&t_Co == 256 && (&term ==# "xterm" || &term =~# "^
     CSAHi vimAutoCmdSpace term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi vimAutoEventList term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi vimAutoCmdSfxList term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
-		CSAHi CursorLine term=bold cterm=bold ctermbg=NONE ctermfg=NONE gui=bold
-		guibg=NONE guifg=NONE
+    CSAHi CursorLine term=bold cterm=bold ctermbg=NONE ctermfg=NONE gui=bold guibg=NONE guifg=NONE
     CSAHi ColorColumn term=reverse cterm=NONE ctermbg=124 ctermfg=fg gui=NONE guibg=DarkRed guifg=fg
     CSAHi Cursor term=NONE cterm=NONE ctermbg=231 ctermfg=16 gui=NONE guibg=white guifg=black
     CSAHi lCursor term=NONE cterm=NONE ctermbg=231 ctermfg=16 gui=NONE guibg=fg guifg=bg
