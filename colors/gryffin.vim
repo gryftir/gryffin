@@ -27,6 +27,7 @@ endfunction
 
 if 0
 elseif has("gui_running") || (&t_Co == 256 && (&term ==# "xterm" || &term =~# "^screen") && exists("g:CSApprox_konsole") && g:CSApprox_konsole) || (&term =~? "^konsole" && s:old_kde())
+		CSAHi htmlItalic term=NONE cterm=NONE ctermbg=16 ctermfg=231 gui=NONE guibg=black guifg=#f6f3e8
     CSAHi Normal term=NONE cterm=NONE ctermbg=16 ctermfg=231 gui=NONE guibg=black guifg=#f6f3e8
     CSAHi perlPackageConst term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi SyntasticErrorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
@@ -1293,3 +1294,4 @@ if 1
 endif
 highlight Normal ctermbg=None
 highlight NonText ctermbg=None
+highlight Noise ctermfg=3
