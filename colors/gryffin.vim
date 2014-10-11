@@ -27,7 +27,7 @@ endfunction
 
 if 0
 elseif has("gui_running") || (&t_Co == 256 && (&term ==# "xterm" || &term =~# "^screen") && exists("g:CSApprox_konsole") && g:CSApprox_konsole) || (&term =~? "^konsole" && s:old_kde())
-		CSAHi htmlItalic term=NONE cterm=NONE ctermbg=16 ctermfg=231 gui=NONE guibg=black guifg=#f6f3e8
+    CSAHi htmlItalic term=italic cterm=NONE ctermbg=233 ctermfg=145 gui=NONE guibg=black guifg=#f6f3e8
     CSAHi Normal term=NONE cterm=NONE ctermbg=16 ctermfg=231 gui=NONE guibg=black guifg=#f6f3e8
     CSAHi perlPackageConst term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi SyntasticErrorLine term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
@@ -106,8 +106,8 @@ elseif has("gui_running") || (&t_Co == 256 && (&term ==# "xterm" || &term =~# "^
     CSAHi vimAutoCmdSfxList term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi CursorLine term=bold cterm=bold ctermbg=NONE ctermfg=NONE gui=bold guibg=NONE guifg=NONE
     CSAHi ColorColumn term=reverse cterm=NONE ctermbg=124 ctermfg=fg gui=NONE guibg=DarkRed guifg=fg
-    CSAHi Cursor term=NONE cterm=NONE ctermbg=231 ctermfg=16 gui=NONE guibg=white guifg=black
-    CSAHi lCursor term=NONE cterm=NONE ctermbg=231 ctermfg=16 gui=NONE guibg=fg guifg=bg
+    CSAHi Cursor term=NONE cterm=reverse ctermbg=bg ctermfg=fg gui=NONE guibg=white guifg=black
+    CSAHi lCursor term=NONE cterm=reverse ctermbg=bg ctermfg=fg gui=NONE guibg=fg guifg=bg
     CSAHi MatchParen term=reverse cterm=bold ctermbg=138 ctermfg=231 gui=bold guibg=#857b6f guifg=#f6f3e8
     CSAHi vimMapRhsExtend term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi vimMenuBang term=NONE cterm=NONE ctermbg=NONE ctermfg=fg gui=NONE guibg=bg guifg=fg
@@ -1295,3 +1295,7 @@ endif
 highlight Normal ctermbg=None
 highlight NonText ctermbg=None
 highlight Noise ctermfg=3
+highlight Cursor term=reverse cterm=bold ctermbg=236 ctermfg=255 gui=reverse guibg=white guifg=black
+highlight lCursor term=reverse cterm=bold ctermbg=236 ctermfg=255 gui=reverse guibg=white  guifg=black
+highlight htmlBoldUnderlineItalic term=NONE cterm=NONE ctermbg=NONE ctermfg=166
+highlight htmlItalic term=italic cterm=underline ctermfg=206 ctermbg=NONE guibg=NONE guifg=NONE
