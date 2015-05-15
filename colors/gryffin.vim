@@ -1299,3 +1299,6 @@ highlight Cursor term=reverse cterm=bold ctermbg=236 ctermfg=255 gui=reverse gui
 highlight lCursor term=reverse cterm=bold ctermbg=236 ctermfg=255 gui=reverse guibg=white  guifg=black
 highlight htmlBoldUnderlineItalic term=NONE cterm=NONE ctermbg=NONE ctermfg=166
 highlight htmlItalic term=italic cterm=underline ctermfg=206 ctermbg=NONE guibg=NONE guifg=NONE
+highlight jinjaVariable term=none cterm=none ctermbg=none ctermfg=203
+highlight jinjaTagDelim ctermfg=190
+highlight jinjaVarDelim ctermfg=84
