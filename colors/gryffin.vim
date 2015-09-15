@@ -1302,3 +1302,4 @@ highlight htmlItalic term=italic cterm=underline ctermfg=206 ctermbg=NONE guibg=
 highlight jinjaVariable term=none cterm=none ctermbg=none ctermfg=203
 highlight jinjaTagDelim ctermfg=190
 highlight jinjaVarDelim ctermfg=84
+highlight rubyInstanceVariable ctermfg=green
